@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# from .views import addquestion
+from django.shortcuts import render
+from  .views import addquestion
 
 urlpatterns = [
-    
+    path('addquestion/',addquestion,name='addquestion')
 ]
